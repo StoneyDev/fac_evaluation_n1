@@ -1,0 +1,201 @@
+$blue: #034456
+
+*
+  box-sizing: border-box
+
+@font-face
+  font-family: "Bernina Sans"
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2")
+
+
+html, body
+  height: 100%
+  margin: 0
+  padding: 0
+  background-color: #F7FFFF
+  font-family: "Bernina Sans"
+  color: $blue
+
+p
+  font-size: 20px
+
+.uppercase
+  text-transform: uppercase
+
+//HEADER BG
+.bg
+  background-image: url('../img/background.jpg')
+  height: 100%
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  
+  .bg-content
+    position: absolute
+    left: -30%
+    top: 90%
+    width: 100%
+    text-align: center
+    color: #000
+
+    .bg-subtitle
+      background-color: #111
+      color: #fff
+      padding: 18px
+      font-size: 25px
+      letter-spacing: 10px
+
+    .corner-top-right
+      -ms-transform: rotate(25deg)
+      -webkit-transform: rotate(25deg)
+      transform: rotate(25deg)
+      width: 10%
+      padding: 5px
+      display: inline-flex
+      border-radius: 10px
+      font-size: 15px
+      color: #fff
+      text-align: center
+      background: #810426
+      position: relative
+      bottom: 50rem
+      left: 74rem
+
+    @media all and (max-width: 768px)
+      .corner-top-right
+        width: 30%
+        bottom: 44rem
+        left: 28rem
+
+    @media all and (max-width: 480px)
+      .corner-top-right
+        width: 50%
+        left: 10rem
+        bottom: 30rem
+
+.container
+  display: flex
+  flex-wrap: wrap
+  width: 45%
+  margin: 0 auto
+
+@media only screen and (max-width: 768px)
+  .container
+    width: 90%
+
+@media only screen and (max-width: 480px)
+  .container
+    width: 100%
+
+
+nav
+  width: 100%
+  margin-bottom: 50px
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+    background-color: transparent
+
+  li
+    float: left
+
+    a
+      display: block
+      color: white
+      text-align: center
+      padding: 14px 16px
+      text-decoration: none
+
+      button
+        background-color: transparent
+        border: 2px solid $blue
+        color: $blue
+        letter-spacing: 2px
+        border-radius: 10px
+        padding: 15px 32px
+        text-decoration: none
+        font-size: 16px
+        margin: 4px 2px
+        cursor: pointer
+
+    @media only screen and (max-width: 480px)
+      a
+        padding: 14px 0
+
+  .nav-right
+    float: right
+
+
+//TEXTE PRINCIPAL
+.bloc-txt
+  text-align: center
+  margin: 0 auto
+
+  .title
+    margin-bottom: 50px
+
+.right
+  text-align: right
+  padding: 20px
+  width: 100%
+  letter-spacing: 5px
+
+@media only screen and (max-width: 480px)
+  .right
+    text-align: left
+
+
+
+//COLONNES DES 3 IMAGES
+.column
+  float: left
+  width: 33.33%
+  padding: 10px
+  text-align: center
+
+  h2
+    letter-spacing: 2px
+  
+  img
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+
+.row:after
+  content: ""
+  display: table
+  clear: both
+
+@media only screen and (max-width: 768px)
+  .column
+    width: 50%
+
+@media only screen and (max-width: 480px)
+  .row
+    display: flex
+    flex-direction: column
+    width: 100%
+
+  #cryo
+    order: 2
+
+  #smart
+    order: 1
+
+  #gym
+    order: 3
+
+
+
+
+
+
+
+
+
+
+
+
